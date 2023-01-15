@@ -32,6 +32,10 @@ nav {
     color: #131313;
 }
 
+nav ul {
+    display: flex;
+}
+
 nav li {
     list-style: none;
     margin-left: 35px;
@@ -40,9 +44,7 @@ nav li {
     font-size: 18px;
 }
 
-nav ul {
-    display: flex;
-}
+
 
 /* Part 2: Brand New Group of Architects-style */
 
@@ -54,7 +56,7 @@ nav ul {
 
 .barnd-title {
     font-weight: 700;
-    font-size: 60px;
+    font-size: 55px;
     color: #131313;
 }
 
@@ -79,7 +81,7 @@ nav ul {
 }
 
 .banner-img {
-    width: 1080px;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -103,6 +105,14 @@ nav ul {
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 20px;
     grid-column-gap: 20px;
+}
+
+.image-galary img {
+    width: 100%;
+}
+
+.quick-list{
+    max-width: 400px;
 }
 
 #color-Quick {
@@ -196,7 +206,7 @@ nav ul {
     margin-top: 100px;
     margin-left: 28%;
     margin-right: 28%;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -221,4 +231,66 @@ footer div {
     text-align: center;
     background: #FFF4E7;
     border-radius: 8px;
+}
+
+/* ----------------------Small Mobile-Responsip------------------------*/
+
+
+@media screen and (max-width: 688px) {
+
+    header {
+        background: rgba(255, 144, 14, 0.1);
+        padding-left: 5%;
+        padding-right: 5%;
+    
+    }
+
+    /* Part 1: G3 Architects Navigation-Style */
+
+nav {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    padding: 0px;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 15px;
+    color: #424242;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* Part 2: Brand New Group of Architects-style */
+
+.banner-img {
+    width: 100%;
+}
+.text-btn-container {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Part 3: Images Galary and Quick list */
+
+.quick-list-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 60px;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+    
+}
+
+/* ------------temp */
+.display-n{
+    display: none;
 }
