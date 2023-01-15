@@ -150,14 +150,15 @@ nav li {
     align-items: center;
 }
 
+.image-block img{
+    width: 100%;
+}
 
 .btn-look {
     background-color: #FF900E;
     border-radius: 8px;
-    width: 300px;
-    height: 155px;
     text-align: center;
-    padding-top: 20px;
+    padding: 20px;
     
 }
 .btn-look h3 {
@@ -239,7 +240,6 @@ footer div {
 @media screen and (max-width: 688px) {
 
     header {
-        background: rgba(255, 144, 14, 0.1);
         padding-left: 5%;
         padding-right: 5%;
     
@@ -259,11 +259,7 @@ nav ul {
 }
 
 nav li {
-    list-style: none;
     margin-left: 15px;
-    color: #424242;
-    font-weight: 500;
-    font-size: 18px;
 }
 
 /* Part 2: Brand New Group of Architects-style */
@@ -282,15 +278,44 @@ nav li {
 .quick-list-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 60px;
-    align-items: center;
-    margin-top: 80px;
-    margin-bottom: 100px;
-}
-    
 }
 
-/* ------------temp */
-.display-n{
-    display: none;
+/* Part 4 : Features Section-style */
+
+.features-list-container {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.image-block img{
+    width: 100%;
+}
+
+/* Part 5: Some Facts Section */
+
+.fact-info-container {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/* Part 6: Our Sponspors section */
+
+.logo-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.logo-container img {
+    max-width: 100px;
+    margin: 20px 10px;
+}
+
+.Sponspors-info {
+    margin-top: 70px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+footer {
+    margin-top: 100px;
+    margin-bottom: 110px;
+}
+    
 }
